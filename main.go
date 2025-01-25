@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
-import "learn-go/calculation"
+import (
+	"fmt"
+	"learn-go/calculation"
+)
 
 func main()  {
   fmt.Println("hallo word")
