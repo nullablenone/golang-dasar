@@ -1,16 +1,23 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
+	// else if
+	score := 90
+	var grade string
 
-	// if
-	age := 2
-	if age > 10 {
-		fmt.Println("sudah boleh mengcoding")
-	} else {
-		fmt.Println("tidak memenuhi syarat")
+	if score <= 60 {
+		grade = "D"
+	} else if score <= 70 {
+		grade = "C"
+	} else if score <= 80 {
+		grade = "B"
+	}else if score <= 100 {
+		grade = "A"
+	}else{
+		grade = "NULL"
 	}
+
+	fmt.Println(grade)
 }
