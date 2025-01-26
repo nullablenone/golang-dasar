@@ -1,23 +1,16 @@
 package main
 
-import "fmt"
-
 func main() {
-	// else if
-	score := 90
-	var grade string
+	angka := 4
 
-	if score <= 60 {
-		grade = "D"
-	} else if score <= 70 {
-		grade = "C"
-	} else if score <= 80 {
-		grade = "B"
-	}else if score <= 100 {
-		grade = "A"
-	}else{
-		grade = "NULL"
+	switch angka {
+	case 1:
+		println("Satu")
+	case 2:
+		println("Dua")
+	case 3:
+		println("Tiga")
+	default:
+		println("NULL")
 	}
-
-	fmt.Println(grade)
 }
