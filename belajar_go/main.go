@@ -3,11 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	iterasi := 1
+	teks := "ingin menjadi programmer handal namun enggan mengcoding"
 
-	for iterasi <= 100{
-		fmt.Println("menjalankan", iterasi)
-		iterasi++
+	for index, iterasi := range teks {
+		fmt.Println("no :", index, "car :", string(iterasi))
 	}
-	
+
+	// _: Kalau nggak perlu pakai index/key, biasanya ditaruh _ untuk mengabaikan.
+	for _, iterasi := range teks {
+		fmt.Println("car :", string(iterasi))
+	}
+
+
+
 }
