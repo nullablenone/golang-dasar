@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	language := [5]string{"c++", "js"}
+	language := [...]string{"c++", "js", "php"}
 
 	fmt.Println(language)
 }
