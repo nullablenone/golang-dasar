@@ -1,19 +1,35 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	teks := "ingin menjadi programmer handal namun enggan mengcoding"
+	//mencetak cika index bilangan genap
+	//mencetak jika iterasi nya huruf vokal
+
+	teks := "Golang the bast languange"
 
 	for index, iterasi := range teks {
-		fmt.Println("no :", index, "car :", string(iterasi))
+
+		if index%2 == 0 {
+			
+			switch iterasi {
+			case 'a', 'i', 'u', 'e', 'o':
+				fmt.Println("index :", index, "car :", string(iterasi))
+
+				// case 'a':
+				// 	fmt.Println("index :", index, "car :", string(iterasi))
+				// case 'i':
+				// 	fmt.Println("index :", index, "car :", string(iterasi))
+				// case 'u':
+				// 	fmt.Println("index :", index, "car :", string(iterasi))
+				// case 'e':
+				// 	fmt.Println("index :", index, "car :", string(iterasi))
+				// case 'o':
+				// 	fmt.Println("index :", index, "car :", string(iterasi))
+			}
+
+		}
 	}
-
-	// _: Kalau nggak perlu pakai index/key, biasanya ditaruh _ untuk mengabaikan.
-	for _, iterasi := range teks {
-		fmt.Println("car :", string(iterasi))
-	}
-
-
-
 }
